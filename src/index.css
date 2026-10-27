@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --dp-color-ground: #f3eee4;
+    --dp-color-ground-2: #e4dbcc;
+    --dp-color-ink: #262321;
+    --dp-color-ink-2: #5f5750;
+    --dp-color-field: #262321;
+    --dp-color-field-deep: #302c29;
+    --dp-color-field-line: #46403a;
+    --dp-color-on-field: #f3eee4;
+    --dp-color-on-field-2: #c6bdb0;
+    --dp-color-panel: #e4dbcc;
+    --dp-color-panel-line: #c6b89f;
+    --dp-color-accent: #b69355;
+    --dp-color-accent-text: #76591f;
+    --dp-color-accent-light: #d2b071;
+    --dp-color-rule: #d5cab8;
+  }
+
+  body {
+    background-color: var(--dp-color-ground);
+    color: var(--dp-color-ink);
+    font-family: 'Instrument Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+  }
+}
+
+/* Custom Luxury tokens helper classes */
+.bg-luxury-ground { background-color: var(--dp-color-ground); }
+.bg-luxury-ground-2 { background-color: var(--dp-color-ground-2); }
+.bg-luxury-field { background-color: var(--dp-color-field); }
+.bg-luxury-field-deep { background-color: var(--dp-color-field-deep); }
+.bg-luxury-panel { background-color: var(--dp-color-panel); }
+
+.text-luxury-ink { color: var(--dp-color-ink); }
+.text-luxury-ink-2 { color: var(--dp-color-ink-2); }
+.text-luxury-on-field { color: var(--dp-color-on-field); }
+.text-luxury-on-field-2 { color: var(--dp-color-on-field-2); }
+.text-luxury-accent { color: var(--dp-color-accent); }
+.text-luxury-accent-text { color: var(--dp-color-accent-text); }
+.text-luxury-accent-light { color: var(--dp-color-accent-light); }
+
+.border-luxury-rule { border-color: var(--dp-color-rule); }
+.border-luxury-accent { border-color: var(--dp-color-accent); }
+.border-luxury-panel-line { border-color: var(--dp-color-panel-line); }
+.border-luxury-field-line { border-color: var(--dp-color-field-line); }
+
+/* Luxury Button Press */
+.luxury-btn-press:active {
+  transform: translateY(1px);
+}
+
+/* Custom Scrollbar for Luxury Theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--dp-color-ground);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--dp-color-rule);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dp-color-accent);
+}

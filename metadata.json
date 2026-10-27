@@ -1,0 +1,6 @@
+{
+  "name": "Health360 - Smart Healthcare & Risk Analytics",
+  "description": "Comprehensive Healthcare Risk & Disease Analytics platform with interactive Tableau Public dashboard and clinical story integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
